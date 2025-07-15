@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starshades™ - Premium Nose-Therapy Meditation Eyewear</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            color: white;
+            padding: 40px 0;
+        }
+        
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .tagline {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .hero-text {
+            font-size: 1.1em;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            line-height: 1.8;
+        }
+        
+        .products-section {
+            background: rgba(255,255,255,0.95);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            color: #333;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+        }
+        
+        .product-name {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        .product-price {
+            font-size: 2em;
+            font-weight: bold;
+            color: #764ba2;
+            margin-bottom: 15px;
+        }
+        
+        .product-description {
+            margin-bottom: 25px;
+            line-height: 1.6;
+            color: #666;
+        }
+        
+        .buy-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .buy-btn {
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .tiktok-btn {
+            background: linear-gradient(45deg, #ff0050, #ff4081);
+        }
+        
+        .lazada-btn {
+            background: linear-gradient(45deg, #ff6600, #ff9900);
+        }
+        
+        .buy-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .features-section {
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 40px 0;
+            color: white;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .feature-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        
+        .contact-section {
+            background: rgba(255,255,255,0.95);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        .contact-info {
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+        
+        .phone {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+            
+            .products-section,
+            .features-section,
+            .contact-section {
+                padding: 20px;
+            }
+            
+            .buy-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🕶️ Starshades™</h1>
+            <p class="tagline">Premium Nose-Therapy Meditation Eyewear</p>
+            <p class="hero-text">
+                Experience the revolutionary fusion of ancient yogic Pranayama practices with modern ergonomic design. 
+                Our therapeutic sunglasses stimulate key acupressure points on your nose bridge, promoting mental clarity, 
+                focus, and inner peace through every wear.
+            </p>
+        </header>
+        
+        <div class="products-section">
+            <h2 class="section-title">Our Premium Collection</h2>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <h3 class="product-name">Starshades™ GeneseX</h3>
+                    <p class="product-price">₱799</p>
+                    <p class="product-description">
+                        Premium nose-therapy sunglasses with ergonomic bridge design for enhanced mental clarity 
+                        and focus through acupressure point stimulation. Perfect for daily meditation and mindfulness.
+                    </p>
+                    <div class="buy-buttons">
+                        <a href="https://vt.tiktok.com/ZSBDntgvV/" target="_blank" class="buy-btn tiktok-btn">Buy on TikTok</a>
+                        <a href="https://s.lazada.com.ph/s.tYXjD" target="_blank" class="buy-btn lazada-btn">Buy on Lazada</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <h3 class="product-name">Starshades™ ZenFlow</h3>
+                    <p class="product-price">₱899</p>
+                    <p class="product-description">
+                        Advanced meditation eyewear combining traditional Pranayama breathing techniques with modern 
+                        ergonomic design for optimal nose bridge therapy and stress relief.
+                    </p>
+                    <div class="buy-buttons">
+                        <a href="https://vt.tiktok.com/ZSBDntgvV/" target="_blank" class="buy-btn tiktok-btn">Buy on TikTok</a>
+                        <a href="https://s.lazada.com.ph/s.tYXjD" target="_blank" class="buy-btn lazada-btn">Buy on Lazada</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <h3 class="product-name">Starshades™ MindBridge</h3>
+                    <p class="product-price">₱999</p>
+                    <p class="product-description">
+                        Therapeutic sunglasses featuring precision-engineered nose pads that stimulate key acupressure 
+                        points for enhanced mental clarity, focus, and overall well-being.
+                    </p>
+                    <div class="buy-buttons">
+                        <a href="https://vt.tiktok.com/ZSBDntgvV/" target="_blank" class="buy-btn tiktok-btn">Buy on TikTok</a>
+                        <a href="https://s.lazada.com.ph/s.tYXjD" target="_blank" class="buy-btn lazada-btn">Buy on Lazada</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="features-section">
+            <h2 class="section-title">Why Choose Starshades™?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">🧘</div>
+                    <h3>Nose-Therapy Technology</h3>
+                    <p>Ergonomic bridge design stimulates acupressure points for enhanced mental clarity and focus.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">🌅</div>
+                    <h3>Pranayama Integration</h3>
+                    <p>Combines ancient yogic breathing techniques with modern eyewear for holistic wellness.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">💎</div>
+                    <h3>Premium Quality</h3>
+                    <p>Luxury-inspired design at affordable prices, crafted for daily meditation and mindfulness.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Therapeutic Benefits</h3>
+                    <p>Precision-engineered for stress relief, mental clarity, and overall well-being enhancement.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contact-section">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-info">
+                <p><strong>W.Deepz Building</strong><br>
+                1033 M.H. Del Pilar Street<br>
+                Ermita, Manila, Philippines</p>
+                
+                <p class="phone">📞 +63 9397254120</p>
+                
+                <p><em>Experience the transformative power of nose-therapy meditation eyewear today!</em></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
