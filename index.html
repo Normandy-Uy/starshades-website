@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starshades™ | Premium Nose-Therapy Meditation Eyewear</title>
+    <meta name="description" content="Starshades™ - Premium nose-therapy meditation eyewear combining ergonomic design with ancient yogic Pranayama practices for mental clarity and focus.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-decoration: none;
+            color: white;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+        
+        nav a:hover {
+            opacity: 0.8;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1a2a3a 0%, #2a3a4a 100%);
+            color: white;
+            padding: 150px 0 100px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .hero-content {
+            text-align: left;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        .hero-tagline {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #f5b942;
+            font-weight: 600;
+        }
+        
+        .hero-description {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            opacity: 0.9;
+        }
+        
+        .hero-subdescription {
+            font-size: 1rem;
+            margin-bottom: 3rem;
+            line-height: 1.6;
+            opacity: 0.8;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .cta-button {
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+        
+        .cta-button.primary {
+            background: #f5b942;
+            color: #1a2a3a;
+        }
+        
+        .cta-button.primary:hover {
+            background: white;
+            color: #1a2a3a;
+        }
+        
+        .cta-button.secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .cta-button.secondary:hover {
+            background: white;
+            color: #1a2a3a;
+        }
+        
+        .hero-image {
+            text-align: center;
+        }
+        
+        .product-showcase {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .product-showcase img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        
+        /* Sections */
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #333;
+            font-weight: 700;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 4rem;
+            color: #666;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Nose Therapy Section */
+        .nose-therapy {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+        
+        .therapy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        
+        .therapy-card {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            text-align: center;
+        }
+        
+        .therapy-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .therapy-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        /* Meditation Section */
+        .meditation {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            color: #333;
+        }
+        
+        .meditation-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .meditation-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        .meditation-benefits {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .meditation-benefits li {
+            padding: 0.5rem 0;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .meditation-benefits li::before {
+            content: "🧘";
+            font-size: 1.2rem;
+        }
+        
+        /* Products Section */
+        .products {
+            background: white;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .product-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .product-info {
+            padding: 2rem;
+        }
+        
+        .product-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+        
+        .product-price {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+        
+        .product-description {
+            color: #666;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        
+        .product-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .buy-button {
+            flex: 1;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            text-align: center;
+            transition: all 0.3s;
+            min-width: 120px;
+        }
+        
+        .tiktok-btn {
+            background: linear-gradient(45deg, #ff0050, #ff4081);
+            color: white;
+        }
+        
+        .lazada-btn {
+            background: linear-gradient(45deg, #ff6600, #ff9900);
+            color: white;
+        }
+        
+        .buy-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        /* Meditation Cards */
+        .meditation-card {
+            background: rgba(255,255,255,0.9);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-left: 4px solid #f5b942;
+        }
+        
+        .meditation-card h3 {
+            color: #1a2a3a;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .meditation-card .time {
+            font-size: 0.9rem;
+            color: #666;
+            font-weight: normal;
+        }
+        
+        .meditation-quote {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #f5b942;
+            margin: 1rem 0;
+            font-style: italic;
+        }
+        
+        .meditation-description {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        
+        .meditation-instructions {
+            margin: 1rem 0;
+        }
+        
+        .meditation-instructions ul {
+            padding-left: 1rem;
+        }
+        
+        .meditation-instructions li {
+            margin-bottom: 0.5rem;
+            color: #666;
+        }
+        
+        .affirmation {
+            text-align: center;
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #1a2a3a;
+            font-weight: 600;
+        }
+        
+        .meditation-card.completion {
+            background: linear-gradient(135deg, #f5b942 0%, #1a2a3a 100%);
+            color: white;
+        }
+        
+        .meditation-cta {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 2rem;
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+        }
+        
+        .meditation-cta p {
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        /* Founder Section */
+        .founder {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 80px 0;
+        }
+        
+        .founder-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .founder-text {
+            text-align: left;
+        }
+        
+        .founder-description {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+        
+        .founder-quote {
+            font-size: 1rem;
+            color: #333;
+            font-style: italic;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: rgba(245, 185, 66, 0.1);
+            border-left: 4px solid #f5b942;
+            border-radius: 10px;
+        }
+        
+        .founder-attribution {
+            font-size: 0.9rem;
+            color: #666;
+            font-style: italic;
+        }
+        
+        .founder-image {
+            text-align: center;
+        }
+        
+        .founder-photo {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .founder-photo img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+        
+        /* About Section */
+        .about {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        /* Contact Section */
+        .contact {
+            background: #333;
+            color: white;
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        
+        .contact-item {
+            text-align: center;
+        }
+        
+        .contact-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #667eea;
+        }
+        
+        .contact-item h3 {
+            margin-bottom: 1rem;
+        }
+        
+        .phone-number {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #667eea;
+        }
+        
+        /* Footer */
+        footer {
+            background: #222;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                text-align: center;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-tagline {
+                font-size: 1.5rem;
+            }
+            
+            .hero-description {
+                font-size: 1rem;
+            }
+            
+            .hero-content {
+                text-align: center;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .product-buttons {
+                flex-direction: column;
+            }
+            
+            .buy-button {
+                flex: none;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .founder-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                text-align: center;
+            }
+            
+            .founder-text {
+                text-align: center;
+            }
+            
+            .meditation-card {
+                padding: 1.5rem;
+            }
+            
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">Starshades™</a>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#therapy">Nose Therapy</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1>🌟 Welcome to Starshades™, the nose-therapy meditation eyewear.</h1>
+                    <h2 class="hero-tagline">Shape Your Vision. Sharpen Your Mind.</h2>
+                    <p class="hero-description">
+                        What if your sunglasses could do more than block the sun? What if they could <em>awaken your inner clarity</em>—mentally, emotionally, even spiritually?
+                    </p>
+                    <p class="hero-subdescription">
+                        <strong>Starshades™</strong> are a bold fusion of ergonomic design and the ancient yogic practice of <strong>Pranayama</strong>—the art of breath control. Inspired by this timeless technique, our frames gently stimulate key acupressure points on the nose bridge, helping to calm the mind, sharpen focus, and support emotional balance.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="https://vt.tiktok.com/ZSBDntgvV/" target="_blank" class="cta-button primary">🎵 Buy on TikTok</a>
+                        <a href="https://s.lazada.com.ph/s.tYXjD" target="_blank" class="cta-button secondary">🛒 Buy on Lazada</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="product-showcase">
+                        <img src="/assets/products/front.jpg" alt="Starshades™ Nose-Therapy Sunglasses showcase" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nose Therapy Section -->
+    <section id="therapy" class="nose-therapy">
+        <div class="container">
+            <h2 class="section-title">Revolutionary Nose-Therapy Technology</h2>
+            <p class="section-subtitle">
+                Discover how our innovative eyewear combines ancient wisdom with modern science 
+                to enhance your mental clarity and well-being.
+            </p>
+            
+            <div class="therapy-grid">
+                <div class="therapy-card">
+                    <div class="therapy-icon">🎯</div>
+                    <h3>Acupressure Points</h3>
+                    <p>Precisely engineered nose pads stimulate key acupressure points on your nose bridge, following traditional Chinese medicine principles for enhanced mental focus.</p>
+                </div>
+                
+                <div class="therapy-card">
+                    <div class="therapy-icon">🧘</div>
+                    <h3>Pranayama Integration</h3>
+                    <p>Our ergonomic design naturally encourages proper breathing patterns, integrating ancient yogic Pranayama techniques into your daily routine.</p>
+                </div>
+                
+                <div class="therapy-card">
+                    <div class="therapy-icon">⚡</div>
+                    <h3>Mental Clarity</h3>
+                    <p>Experience enhanced concentration, reduced stress, and improved cognitive function through consistent therapeutic stimulation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meditation Section -->
+    <section class="meditation">
+        <div class="container">
+            <h2 class="section-title">🌬️ 5-Minute Pranayama Meditation with Starshades™</h2>
+            <p class="section-subtitle">✨ <em>Designed to Center Your Breath, Focus Your Mind, and Reawaken Clarity</em></p>
+            
+            <!-- Before You Begin -->
+            <div class="meditation-card">
+                <h3>Before You Begin:</h3>
+                <ul>
+                    <li>• Find a quiet space</li>
+                    <li>• Sit comfortably with your spine upright</li>
+                    <li>• Put on your <em>Starshades™</em> and gently adjust them until they feel snug across your nose bridge</li>
+                </ul>
+            </div>
+
+            <!-- Step 1: Grounding -->
+            <div class="meditation-card">
+                <h3>🧘‍♂️ Step 1: Grounding <span class="time">(1 minute)</span></h3>
+                <div class="meditation-quote">
+                    <p><em>
+                        Close your eyes behind your lenses.<br/>
+                        Feel the gentle pressure on your nasal bridge.<br/>
+                        Let it anchor you—grounding your awareness in this moment.
+                    </em></p>
+                </div>
+                <div class="meditation-instructions">
+                    <p><strong>Breathe slowly:</strong></p>
+                    <ul>
+                        <li>• Inhale through your nose for 4 counts…</li>
+                        <li>• Hold for 4…</li>
+                        <li>• Exhale through your nose for 6 counts</li>
+                        <li>• Repeat for three cycles</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Step 2: Balancing Breath -->
+            <div class="meditation-card">
+                <h3>💨 Step 2: Balancing Breath <span class="time">(2 minutes)</span></h3>
+                <p class="meditation-description">Inspired by <em>Nadi Shodhana</em>, the alternate nostril breathing practice of Pranayama.</p>
+                <div class="meditation-instructions">
+                    <ul>
+                        <li>• Place your right thumb on your right nostril, and inhale through your left nostril for 4 counts</li>
+                        <li>• Close your left nostril with your ring finger, exhale through the right nostril for 6 counts</li>
+                        <li>• Inhale through the right nostril for 4 counts</li>
+                        <li>• Close the right, exhale through the left for 6 counts</li>
+                        <li>• Repeat for 4 full cycles</li>
+                    </ul>
+                </div>
+                <div class="meditation-quote">
+                    <p><em>
+                        With <strong>Starshades™</strong>, the gentle nose stimulation enhances the energetic flow across your sinuses and mental centers.
+                    </em></p>
+                </div>
+            </div>
+
+            <!-- Step 3: Clarity Visualization -->
+            <div class="meditation-card">
+                <h3>🌟 Step 3: Clarity Visualization <span class="time">(2 minutes)</span></h3>
+                <p class="meditation-description">Let go of control and return to natural breath.</p>
+                <div class="meditation-quote">
+                    <p><em>
+                        Picture your thoughts clearing like fog lifting at dawn.<br/>
+                        Let the soft pressure of <strong>Starshades™</strong> guide your attention inward—toward focus, toward intention.
+                    </em></p>
+                </div>
+                <div class="meditation-instructions">
+                    <p><strong>Affirm silently:</strong></p>
+                    <p class="affirmation">"I see clearly. I breathe freely. I return to balance."</p>
+                </div>
+            </div>
+
+            <!-- Session Complete -->
+            <div class="meditation-card completion">
+                <h3>🪐 Session Complete</h3>
+                <p>
+                    Open your eyes. Gently remove your <em>Starshades™</em>, if you wish.<br/>
+                    Carry this sense of balance into the rest of your day.
+                </p>
+            </div>
+
+            <div class="meditation-cta">
+                <p>Experience the perfect fusion of mindfulness and eyewear with Starshades™</p>
+                <a href="#products" class="cta-button primary">Start Your Mindful Journey</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Our Premium Collection</h2>
+            <p class="section-subtitle">
+                Discover our carefully curated selection of therapeutic meditation eyewear, 
+                each designed to enhance your journey toward inner peace and mental clarity.
+            </p>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="/assets/products/angled.jpg" alt="Starshades™ GeneseX" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Starshades™ GeneseX</h3>
+                        <p class="product-price">₱799</p>
+                        <p class="product-description">
+                            Premium nose-therapy sunglasses with ergonomic bridge design for enhanced mental clarity 
+                            and focus through acupressure point stimulation. Perfect for daily meditation and mindfulness.
+                        </p>
+                        <div class="product-buttons">
+                            <a href="https://vt.tiktok.com/ZSBDntgvV/" target="_blank" class="buy-button tiktok-btn">Buy on TikTok</a>
+                            <a href="https://s.lazada.com.ph/s.tYXjD" target="_blank" class="buy-button lazada-btn">Buy on Lazada</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="/assets/products/left side.jpg" alt="Starshades™ ZenFlow" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Starshades™ ZenFlow</h3>
+                        <p class="product-price">₱899</p>
+                        <p class="product-description">
+                            Advanced meditation eyewear combining traditional Pranayama breathing techniques with modern 
+                            ergonomic design for optimal nose bridge therapy and stress relief.
+                        </p>
+                        <div class="product-buttons">
+                            <a href="https://vt.tiktok.com/ZSBDntgvV/" target="_blank" class="buy-button tiktok-btn">Buy on TikTok</a>
+                            <a href="https://s.lazada.com.ph/s.tYXjD" target="_blank" class="buy-button lazada-btn">Buy on Lazada</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="/assets/products/mars main.jpg" alt="Starshades™ MindBridge" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Starshades™ MindBridge</h3>
+                        <p class="product-price">₱999</p>
+                        <p class="product-description">
+                            Therapeutic sunglasses featuring precision-engineered nose pads that stimulate key acupressure 
+                            points for enhanced mental clarity, focus, and overall well-being.
+                        </p>
+                        <div class="product-buttons">
+                            <a href="https://vt.tiktok.com/ZSBDntgvV/" target="_blank" class="buy-button tiktok-btn">Buy on TikTok</a>
+                            <a href="https://s.lazada.com.ph/s.tYXjD" target="_blank" class="buy-button lazada-btn">Buy on Lazada</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section class="founder">
+        <div class="container">
+            <div class="founder-content">
+                <div class="founder-text">
+                    <h2 class="section-title">Meet the Visionary Behind Starshades™</h2>
+                    <p class="founder-description">
+                        Inspired by ancient yogic practices and driven by a passion for mindful living, 
+                        our founder discovered the profound connection between nasal stimulation and mental clarity 
+                        during years of dedicated Pranayama practice.
+                    </p>
+                    <blockquote class="founder-quote">
+                        "I realized that the gentle pressure from traditional meditation techniques could be 
+                        seamlessly integrated into everyday eyewear. Starshades™ was born from the vision of 
+                        making mindfulness accessible to everyone, everywhere."
+                    </blockquote>
+                    <p class="founder-attribution">— Founder & Visionary, Captain N. Sepulv</p>
+                </div>
+                <div class="founder-image">
+                    <div class="founder-photo">
+                        <img src="/assets/products/my face.jpg" alt="Starshades™ Founder" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title">About Starshades™</h2>
+            <div class="about-content">
+                <div>
+                    <h3>Our Mission</h3>
+                    <p>
+                        At Starshades™, we believe that wellness should be accessible, elegant, and effortless. 
+                        Our mission is to bridge the gap between ancient healing wisdom and modern lifestyle needs, 
+                        creating eyewear that serves as both protection and therapy.
+                    </p>
+                    <br>
+                    <p>
+                        Each pair of Starshades™ is meticulously crafted to provide not just UV protection, 
+                        but a pathway to enhanced mental clarity, reduced stress, and improved overall well-being 
+                        through the power of nose-therapy meditation.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3>Why Choose Starshades™?</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 0.5rem;">✨ Premium quality at affordable prices</li>
+                        <li style="margin-bottom: 0.5rem;">🧘 Therapeutic benefits with every wear</li>
+                        <li style="margin-bottom: 0.5rem;">🌟 Unique nose-therapy technology</li>
+                        <li style="margin-bottom: 0.5rem;">💎 Luxury-inspired design</li>
+                        <li style="margin-bottom: 0.5rem;">🔬 Scientifically-backed approach</li>
+                        <li style="margin-bottom: 0.5rem;">🌍 Sustainable and ethical production</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-subtitle">
+                Ready to experience the transformative power of nose-therapy meditation eyewear? 
+                Get in touch with us today.
+            </p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <h3>Visit Our Store</h3>
+                    <p>
+                        W.Deepz Building<br>
+                        1033 M.H. Del Pilar Street<br>
+                        Ermita, Manila, Philippines
+                    </p>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <h3>Call Us</h3>
+                    <p class="phone-number">+63 9397254120</p>
+                    <p>Monday - Saturday: 9AM - 6PM</p>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">🛒</div>
+                    <h3>Shop Online</h3>
+                    <p>
+                        <a href="https://vt.tiktok.com/ZSBDntgvV/" target="_blank" style="color: #667eea; text-decoration: none;">TikTok Shop</a><br>
+                        <a href="https://s.lazada.com.ph/s.tYXjD" target="_blank" style="color: #667eea; text-decoration: none;">Lazada Store</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Starshades™. All rights reserved. | Premium Nose-Therapy Meditation Eyewear</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.8;">
+                Experience the fusion of ancient wisdom and modern design for enhanced mental clarity and well-being.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(102, 126, 234, 0.95)';
+                header.style.backdropFilter = 'blur(10px)';
+            } else {
+                header.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
+                header.style.backdropFilter = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
